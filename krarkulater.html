@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+.test {
+background-color: red;
+
+width: 150px;
+border-style: solid;
+border-width: 1px;
+margin: 0px;
+}
+.button {
+padding: 50px;
+display: block;
+font-size: 20px;
+max-width: 150px;
+text-align: center;
+background-color: blue;
+margin:0px;
+box-sizing: border-box;
+}
+#result{
+padding: 20px;
+display: block;
+margin:0px;
+font-size: 20px;
+text-align: center;
+box-sizing: border-box;
+background-color: green;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+  box-sizing: border-box;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="file:///C:/Users/AcevedMo/Documents/GitHub/Moshe-Acevedo.github.io/krarkulater.html">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+
+
+
+<script>
+var x;
+x = 0;
+
+function Plus() {
+ x = x + 1;
+ document.getElementById("result").innerHTML = x;
+}
+
+function Minus() {
+ x = x - 1;
+ document.getElementById("result").innerHTML = x;
+}
+</script>
+
+
+<div class="test">
+<p onclick="Plus()" class="button"> +</p>
+<p id="result">0</p>
+<p onclick="Minus()" class="button"> -</p>
+</div>
+
+</body>
+</html>
